@@ -225,7 +225,11 @@ h1.header-title a {
   background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
 img {
+=======
+.background-image img {
+>>>>>>> My Home Update
   height: 100%;
   width: 100%;
   object-fit: contain;
