@@ -1,0 +1,116 @@
+.header {
+  &-logo {
+    &__info {
+      text-align: center;
+    }
+    &__title a {
+      font-size: 67px;
+      letter-spacing: 9px;
+      line-height: 81px;
+      color: $cl-green;
+      font-family: $font-family-base;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+    &__subtitle {
+      font-size: 21px;
+      letter-spacing: 2px;
+      line-height: 26px;
+      color: $cl-gray;
+      font-family: $font-family-base;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+  }
+
+  .navbar {
+    padding: unset;
+   .nav-item {
+     padding: 5px 10px;
+   }
+  }
+
+  &-menu {
+    display: flex;
+    text-align: center;
+    align-items: baseline;
+    justify-content: space-around;
+    
+    &--mobile {
+      display: none;
+    }
+    
+    &__wrapper {
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+      padding: 10;
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 18px;
+      font-weight: 500;
+      font-family: $font-family-title;
+      text-transform: uppercase;
+      margin-left: 20px;
+      margin-right: 20px;
+      justify-content: space-around;
+      width: 100%;
+      align-items: center;
+      margin-top: 35px;
+    }
+    &__item:hover &__dropdown {
+      display: block;
+    }
+    &__dropdown {
+      position: absolute;
+      display: none;
+      transition: all 0.5s ease;
+      padding-left: inherit; 
+      margin-top:10px;
+      border: 1px solid $cl-green;
+      z-index: 9;
+      background: #fff;
+      opacity: 0.8;
+      &-menu {
+        &__link {
+          color: $cl-gray-2;
+          padding-bottom: 10px;
+        }
+      }
+      &-link {
+        width: 100%;
+        display: inline-block;
+        padding: 10px 30px;
+        box-sizing: inherit;
+      }
+      &-link {
+        color: $cl-gray;
+      }
+      &-item {
+        box-sizing: border-box;
+      }
+      &-item:hover {
+        background: $cl-green;
+      }
+      &-item:hover a {
+        color: $cl-white
+      }
+    }
+    &__search {
+      &-input {
+        width: 244px;
+        padding: 5px;
+        margin-right: 40px;
+      }
+      &-input::placeholder {
+        text-transform: uppercase;
+      }
+    }
+  }
+  &-vertical-line {
+    height: 21px;
+    border: 1px solid $cl-green;
+  }
+}

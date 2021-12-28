@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BlackJack";
+  font-style: normal;
+  font-weight: 400;
+  src: local("BlackJack");
+  src: url("https://fonts.cdnfonts.com/s/10253/BLACKJAR.woff") format("woff");
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: unset;
+  padding: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  background-color: $cl-white;
+  border: 1px solid #8c8c8c;
+  font-size: unset;
+}
+
+button {
+  cursor: pointer;
+  color: $cl-white;
+}
+
+.btn {
+	text-transform: uppercase;
+}
+
+input:focus {
+  border: unset;
+}
