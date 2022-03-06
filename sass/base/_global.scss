@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+	text-transform: uppercase;
+}
+
+input:focus {
+  border: unset;
+}
+
+.font--title {
+  font-family: $font-family-title;
+}
+
+.font--logo {
+  font-family: $font-family-logo;
+}
+
+.font--menu {
+  font-family: $font-family-menu;
+}
+
+.jumbotron {
+  background-color: $cl-white;
+  padding: 0 0;
+}
+
+.btn {
+  &--order {
+    width: 195px;
+    height: 57px;
+    background-color: $cl-red;
+    font-size: 17px;
+    line-height: 38px;
+    color: $cl-white;
+    font-weight: $font-weight-base;
+  }
+}

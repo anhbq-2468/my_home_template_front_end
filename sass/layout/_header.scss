@@ -1,0 +1,118 @@
+.header {
+  background-image: url(../images/background_menu.png);
+  height: 825px;
+  
+  &--info {
+    &__phone {
+      font-size: 17px;
+      line-height: 71px;
+      font-weight: $font-weight-bold;
+      color: $cl-black;
+    }
+  }
+  &--menu {
+    &__items {
+      &-link {
+        margin-right: 55px;
+        font-size: 21px;
+        letter-spacing: 4px;
+      }
+      &-link:last-child {
+        margin-right: unset;
+      }
+      &-link a {
+        color: $cl-black;
+        font-weight: $font-weight-bold;
+        font-family: $font-family-menu;
+      }
+    }
+  }
+  &--banner {
+    justify-content: space-between;
+    margin-top: 80px;
+    &__description {
+      &-subtitle {
+        font-size: 24px;
+        line-height: 33px;
+        columns: $cl-black;
+        font-weight: $font-weight-base;
+        font-family: $font-family-menu;
+        padding: 7px;
+        border: 1px solid;
+        border-style: dashed;
+        display: inline-block;
+        margin-bottom: 40px;
+      }
+      &-title {
+        font-size: 114px;
+        line-height: 62px;
+        font-weight: $font-weight-base;
+        color: $cl-black;
+        font-family: $font-family-logo;
+        filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
+      }
+      &-title span {
+        line-height: 62px;
+        font-size: 56px;
+      }
+    }
+    &__images {
+      position: relative;
+      display: inline-flex;
+      margin-right: 60px;
+      &-burger {
+        position: absolute;
+        left: -333px;
+        top: 120px;    position: absolute;
+        left: -333px;
+        top: 120px;
+        z-index: 2;
+      }
+      &-chip {   
+        position: absolute;
+        top: 60px;
+        left: -485px;
+      }
+    }
+    &__price {
+      width: 174px;
+      height: 174px;
+      border-radius: 87px;
+      background-color: $cl-red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0px;
+      left: -463px;
+      top: 355px;
+      z-index: 9;
+      &-border {
+        width: 151px;
+        height: 151px;
+        border-radius: 75px;
+        border: 2px solid $cl-white;
+        border-style: dashed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      &-current {
+        font-size: 70px;
+        color: $cl-white;
+        font-family: $font-family-menu;
+        line-height: 1;
+      }
+      &-cent {
+        font-size: 30px;
+      }
+      &-description {
+        font-size: 30px;
+        color: $cl-white;
+        font-family: $font-family-menu;
+        letter-spacing: 10px;
+      }
+    }
+  }
+}
